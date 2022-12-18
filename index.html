@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bresenham’s Line</title>
+</head>
+
+<body style="background-color: #FCFFE7;">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+
+                <br>
+                <br>
+                <div class="card" id="imData">
+                    <div class="card-header">
+                        <h4 style="text-align: center;"> Bresenham’s Line Drawing Algorithm</h4>
+                    </div>
+                    <div class="card-body">
+                        <div style="display:inline">
+                            <br>
+
+                            <br>
+
+
+                            <div class="input-group mb-3" id="fel">
+
+
+                                <input style="margin-left: 50px; " type="text" name="" id="x1" placeholder="x1" class="form-control" required>
+                                <span class="input-group-text" id="coma">,</span>
+                                <input type="text" name="" id="y1" placeholder="y1" class="form-control" required>
+
+                                <input style="margin-left: 50px; " type="text" name="" id="x2" placeholder="x2" class="form-control" required>
+                                <span class="input-group-text">,</span>
+                                <input type="text" name="" id="y2" placeholder="y2" class="form-control" required>
+                            </div>
+
+                            <button style="margin-left: 3px; margin-bottom: 10px;" class="btn btn-primary float-end mt-3" onclick="myfun()" type="submit">Draw</button>
+
+                            <button class="btn btn-danger float-end  mt-3" onclick="clearbtn()">Clear</button>
+
+                            <br> <br>
+                            <div style="border:1px solid #d3d3d3; margin-top: 39px;" id="spaceDraw">
+                                <canvas id="myCanvas" width="300" height="150" style="margin-left: 50%; margin-top: 20%;">
+                                Your browser does not support the HTML5 canvas tag.</canvas>
+
+                            </div>
+
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
